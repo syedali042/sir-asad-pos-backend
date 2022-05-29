@@ -40,7 +40,7 @@ module.exports = {
                 res.status(200).send({msg: 'User Updated Successfull', data:updateUser});
             }else{
                 res.status(203).send({msg: 'No User Exist'});
-            } 
+            }   
         } catch (error) {
             res.status(500).send({msg: 'Internal Server Error'});
         }
