@@ -17,7 +17,7 @@ app.use(express.json());
 app.use('/', require('./routers/index'));
 // Configure Dotenv File
 dotenv.config({ path: '.env' });
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3001;
 
 // Server listing
 app.listen(PORT, () => console.log(`Server is running on http://127.0.0.1:${PORT}`));
